@@ -1,6 +1,7 @@
 import Counter from "./features/Counter/Counter";
 import DoubleCalc from "./features/DoubleCalc/DoubleCalc";
 import Faq from "./features/Faq/Faq";
+import Users from "./features/Users/Users";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Counter />
       <Faq />
       <DoubleCalc />
+      <Users /> 
     </div>
   );
 }

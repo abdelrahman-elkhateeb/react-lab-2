@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "johndoe",
+      "email": "johndoe@example.com",
+      "age": 28,
+      "location": "New York, USA",
+      "is_active": true
+    },
+    {
+      "id": 2,
+      "username": "janedoe",
+      "email": "janedoe@example.com",
+      "age": 25,
+      "location": "Los Angeles, USA",
+      "is_active": true
+    },
+    {
+      "id": 3,
+      "username": "bobsmith",
+      "email": "bobsmith@example.com",
+      "age": 32,
+      "location": "London, UK",
+      "is_active": false
+    }
+  ]
+}

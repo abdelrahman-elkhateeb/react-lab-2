@@ -24,5 +24,25 @@
       "location": "London, UK",
       "is_active": false
     }
+  ],
+  "products": [
+    {
+      "product_id": 1,
+      "product_name": "Laptop",
+      "product_desc": "A high-performance laptop",
+      "product_category": "Electronics"
+    },
+    {
+      "product_id": 2,
+      "product_name": "Headphones",
+      "product_desc": "Noise-cancelling headphones",
+      "product_category": "Audio"
+    },
+    {
+      "product_id": 3,
+      "product_name": "Coffee Maker",
+      "product_desc": "Automatic coffee maker",
+      "product_category": "Home Appliances"
+    }
   ]
 }

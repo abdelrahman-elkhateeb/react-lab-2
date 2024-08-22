@@ -3,6 +3,9 @@ import useFetch from "./useFetch";
 
 function ProductItems() {
   const [product, loading, error] = useFetch();
+
+  if (error) return <p>Error: {error.message}</p>;
+
   return !loading ? (
     <ul>
       {product.map((item) => (

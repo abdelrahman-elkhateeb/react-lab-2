@@ -1,8 +1,13 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        orange: "hsl(26, 100%, 55%)",
+        PaleOrange: "hsl(25, 100%, 94%)",
+      },
+    },
   },
-  plugins: [],
+  plugins: ["prettier-plugin-tailwindcss"],
 };

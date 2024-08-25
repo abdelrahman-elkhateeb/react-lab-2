@@ -1,20 +1,35 @@
-import Counter from "./features/Counter/Counter";
-import DoubleCalc from "./features/DoubleCalc/DoubleCalc";
-import Faq from "./features/Faq/Faq";
-import Guessing from "./features/Guessing/Guessing";
-import Shop from "./features/Shop/Shop";
-import Users from "./features/Users/Users";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import PreviousProjects from "./PreviousProjects";
+import Error from "./features/ui/Error";
+import AppLayout from "./features/ui/AppLayout";
+import HomePage from "./features/Home/HomePage";
+
+const router = createBrowserRouter([
+  {
+    element: <AppLayout />,
+    errorElement: <Error />,
+    children: [
+      {
+        path: "*",
+        element: <Error message="Page not found" />,
+        errorElement: <Error />,
+      },
+      {
+        path: "/",
+        element: <HomePage />,
+        errorElement: <Error />,
+      },
+      {
+        path: "/previousProjects",
+        element: <PreviousProjects />,
+        errorElement: <Error />,
+      },
+    ],
+  },
+]);
 
 function App() {
-  return (
-    <div className="container mx-auto px-4">
-      <Counter />
-      <Faq />
-      <DoubleCalc />
-      <Shop />
-      <Guessing />
-    </div>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

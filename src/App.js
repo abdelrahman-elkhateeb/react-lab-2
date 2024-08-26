@@ -2,7 +2,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import PreviousProjects from "./PreviousProjects";
 import Error from "./features/ui/Error";
 import AppLayout from "./features/ui/AppLayout";
-import HomePage from "./features/Home/HomePage";
+import Collections from "./features/Collections/Collections";
+import Product from "./features/ProductDetails/Product";
 
 const router = createBrowserRouter([
   {
@@ -15,8 +16,8 @@ const router = createBrowserRouter([
         errorElement: <Error />,
       },
       {
-        path: "/",
-        element: <HomePage />,
+        path: "/collections",
+        element: <Collections />,
         errorElement: <Error />,
       },
       {
@@ -24,12 +25,21 @@ const router = createBrowserRouter([
         element: <PreviousProjects />,
         errorElement: <Error />,
       },
+      {
+        path: "/product",
+        element: <Product />,
+        errorElement: <Error />,
+      },
     ],
   },
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <div className="container mx-auto px-4">
+      <RouterProvider router={router} />
+    </div>
+  );
 }
 
 export default App;

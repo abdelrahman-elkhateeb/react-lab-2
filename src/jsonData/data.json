@@ -1,50 +1,4 @@
 {
-  "users": [
-    {
-      "id": 1,
-      "username": "johndoe",
-      "email": "johndoe@example.com",
-      "age": 28,
-      "location": "New York, USA",
-      "is_active": true
-    },
-    {
-      "id": 2,
-      "username": "janedoe",
-      "email": "janedoe@example.com",
-      "age": 25,
-      "location": "Los Angeles, USA",
-      "is_active": true
-    },
-    {
-      "id": 3,
-      "username": "bobsmith",
-      "email": "bobsmith@example.com",
-      "age": 32,
-      "location": "London, UK",
-      "is_active": false
-    }
-  ],
-  "products": [
-    {
-      "product_id": 1,
-      "product_name": "Laptop",
-      "product_desc": "A high-performance laptop",
-      "product_category": "Electronics"
-    },
-    {
-      "product_id": 2,
-      "product_name": "Headphones",
-      "product_desc": "Noise-cancelling headphones",
-      "product_category": "Audio"
-    },
-    {
-      "product_id": 3,
-      "product_name": "Coffee Maker",
-      "product_desc": "Automatic coffee maker",
-      "product_category": "Home Appliances"
-    }
-  ],
   "sneakers": [
     {
       "id": 1,
@@ -54,7 +8,7 @@
       "size": "10",
       "brand": "Nike",
       "price": 150.0,
-      "imgUrl": "image-product-1.jpg"
+      "imgUrl": "imgs/image-product-1.jpg"
     },
     {
       "id": 2,
@@ -64,7 +18,7 @@
       "size": "12",
       "brand": "Adidas",
       "price": 120.0,
-      "imgUrl": "image-product-2.jpg"
+      "imgUrl": "imgs/image-product-2.jpg"
     },
     {
       "id": 3,
@@ -74,7 +28,7 @@
       "size": "9",
       "brand": "Puma",
       "price": 110.0,
-      "imgUrl": "image-product-3.jpg"
+      "imgUrl": "imgs/image-product-3.jpg"
     },
     {
       "id": 4,
@@ -84,7 +38,7 @@
       "size": "11",
       "brand": "New Balance",
       "price": 175.0,
-      "imgUrl": "image-product-4.jpg"
+      "imgUrl": "imgs/image-product-4.jpg"
     },
     {
       "id": 5,
@@ -94,7 +48,7 @@
       "size": "10.5",
       "brand": "Asics",
       "price": 160.0,
-      "imgUrl": "image-product-1.jpg"
+      "imgUrl": "imgs/image-product-1.jpg"
     },
     {
       "id": 6,
@@ -104,7 +58,7 @@
       "size": "8.5",
       "brand": "Reebok",
       "price": 140.0,
-      "imgUrl": "image-product-2.jpg"
+      "imgUrl": "imgs/image-product-2.jpg"
     }
   ]
 }

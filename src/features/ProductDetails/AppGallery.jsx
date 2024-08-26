@@ -1,8 +1,8 @@
-import img from "../../assets/image-product-1.jpg";
-import productThumbImgOne from "../../assets/image-product-1-thumbnail.jpg";
-import productThumbImgTwo from "../../assets/image-product-2-thumbnail.jpg";
-import productThumbImgThree from "../../assets/image-product-3-thumbnail.jpg";
-import productThumbImgFour from "../../assets/image-product-4-thumbnail.jpg";
+import img from "../../imgs/image-product-1.jpg";
+import productThumbImgOne from "../../imgs/image-product-1-thumbnail.jpg";
+import productThumbImgTwo from "../../imgs/image-product-2-thumbnail.jpg";
+import productThumbImgThree from "../../imgs/image-product-3-thumbnail.jpg";
+import productThumbImgFour from "../../imgs/image-product-4-thumbnail.jpg";
 import ImgSlider from "../../components/ImgSlider";
 import UseAppGalleryContext from "../../context/UseAppGalleryContext";
 

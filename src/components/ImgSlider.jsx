@@ -1,11 +1,11 @@
 import { useState } from "react";
-import productImgOne from "../assets/image-product-1.jpg";
-import productImgTwo from "../assets/image-product-2.jpg";
-import productImgThree from "../assets/image-product-3.jpg";
-import productImgFour from "../assets/image-product-4.jpg";
+import productImgOne from "../imgs/image-product-1.jpg";
+import productImgTwo from "../imgs/image-product-2.jpg";
+import productImgThree from "../imgs/image-product-3.jpg";
+import productImgFour from "../imgs/image-product-4.jpg";
 
-import next from "../assets/icon-next.svg";
-import prev from "../assets/icon-previous.svg";
+import next from "../imgs/icon-next.svg";
+import prev from "../imgs/icon-previous.svg";
 import UseAppGalleryContext from "../context/UseAppGalleryContext";
 
 const imgSlider = [

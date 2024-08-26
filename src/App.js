@@ -4,6 +4,7 @@ import Error from "./features/ui/Error";
 import AppLayout from "./features/ui/AppLayout";
 import Collections from "./features/Collections/Collections";
 import Product from "./features/ProductDetails/Product";
+import HelpCenter from "./features/HelpCenter/ContactUs";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,22 @@ const router = createBrowserRouter([
         path: "/product",
         element: <Product />,
         errorElement: <Error />,
+      },
+      {
+        path: "/HelpCenter",
+        errorElement: <Error />,
+        children: [
+          {
+            path: "/HelpCenter/contactUs",
+            element: <HelpCenter />,
+            errorElement: <Error />,
+          },
+          {
+            path: "/HelpCenter/faq",
+            element: <div>faq</div>,
+            errorElement: <Error />,
+          },
+        ],
       },
     ],
   },

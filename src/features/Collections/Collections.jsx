@@ -4,6 +4,7 @@ import img2 from "../../imgs/image-product-2.jpg";
 import img3 from "../../imgs/image-product-3.jpg";
 import img4 from "../../imgs/image-product-4.jpg";
 import { Link } from "react-router-dom";
+import CollectionsHeading from "./CollectionsHeading";
 // Add more imports as needed
 
 function HomePage() {
@@ -65,26 +66,31 @@ function HomePage() {
   ];
 
   return (
-    <div className="m-5 grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-      {sneakers.map((item) => (
-        <div
-          key={item.id}
-          className="flex flex-col justify-between rounded p-4 shadow-md min-h-[800px]"
-        >
-          <img src={item.imgUrl} alt={item.name} className="mb-4" />
-          <h2 className="text-2xl font-bold">{item.name}</h2>
-          <p className="text-lg font-medium">description: {item.description}</p>
-          <p className="font-medium">brand: {item.brand}</p>
-          <p className="font-medium">price: {`${item.price}$`}</p>
-          <Link
-            to="/product"
-            className="block rounded bg-orange p-4 text-center text-neutral-100"
+    <>
+      <CollectionsHeading />
+      <div className="m-5 grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        {sneakers.map((item) => (
+          <div
+            key={item.id}
+            className="flex min-h-[800px] flex-col justify-between rounded p-4 shadow-md"
           >
-            show the product
-          </Link>
-        </div>
-      ))}
-    </div>
+            <img src={item.imgUrl} alt={item.name} className="mb-4" />
+            <h2 className="text-2xl font-bold">{item.name}</h2>
+            <p className="text-lg font-medium">
+              description: {item.description}
+            </p>
+            <p className="font-medium">brand: {item.brand}</p>
+            <p className="font-medium">price: {`${item.price}$`}</p>
+            <Link
+              to="/product"
+              className="block rounded bg-orange p-4 text-center font-bold text-neutral-100"
+            >
+              show the product
+            </Link>
+          </div>
+        ))}
+      </div>
+    </>
   );
 }
 

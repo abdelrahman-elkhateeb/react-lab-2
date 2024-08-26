@@ -18,6 +18,9 @@ function Navigation({ isOpen }) {
       <Link to="/previousProjects" className={className}>
         prev projects
       </Link>
+      <Link to="/HelpCenter/contactUs" className={className}>
+        Help Center
+      </Link>
     </ul>
   );
 }

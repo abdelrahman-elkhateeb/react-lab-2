@@ -51,6 +51,7 @@ function ProductDetails() {
           <span className="material-symbols-outlined">shopping_cart</span>
           <p className="font-bold">Add to cart</p>
         </button>
+        
       </section>
     </div>
   );

@@ -1,11 +1,10 @@
 import { Link } from "react-router-dom";
-import error from "../../imgs/error404.svg";
-
+import style from "./Error.module.css";
 function Error() {
   return (
     <div className="container mx-auto flex flex-col items-center justify-center px-4">
-      <div className="mt-9 flex w-full items-center justify-center">
-        <img src={error} alt="error" />
+      <div className="mt-9 flex w-full md:w-2/4 items-center justify-center">
+        <div className={style.gif}></div>
       </div>
       <h2 className="mt-4 text-center text-gray-600 md:text-5xl">
         Oops! It seems that the page you're trying to access doesn't exist.
